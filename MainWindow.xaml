@@ -10,8 +10,13 @@
     <Grid>
         <Label Content="EntradaId:"  Margin = "-500,-350,0,0" Width= "100" Height = "25"/>
         <TextBox x:Name ="NombreTextBox" Margin = "-300,-350,0,0" Width= "100" Height = "25" Text ="0"  />
-        <Button x:Name ="BuscarButton" Margin = "-0, -350,0,0" Width= "100" Height = "25" Content="Buscar" />
-
+        <Button   x:Name ="BuscarButton" FlowDirection="LeftToRight" Margin = "-0, -350,0,0" Width= "100" Height = "25">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="C:\Users\Lenovo\source\repos\DibujoFormulario/buscar.png"  
+                    Margin = "0,0,0,0" Width=  "10" Height = "10" />
+                <TextBlock   >Buscar</TextBlock>
+            </StackPanel>
+        </Button>
 
         <Label Content="Fecha:"  Margin = "-500,-300,0,0" Width= "100" Height = "25"/>
         <DatePicker x:Name ="Picker" Margin = "-300,-300,0,0" Width= "100" Height = "25" Text ="10/9/2020"  />
@@ -24,7 +29,13 @@
         <ComboBox x:Name ="CacaoComboBox" Margin = "-300,-200,0,0" Width= "100" Height = "25"  />
 
         <TextBox x:Name ="CantidadTextBox" Margin = "-300,-150,0,0" Width= "100" Height = "25" Text ="0"  />
-        <Button x:Name ="ConsultarButton" Margin = "-0, -200,0,0" Width= "100" Height = "25" Content="Consultar" />
+        <Button   x:Name ="ConsultarButton" FlowDirection="LeftToRight" Margin = "-0, -200,0,0" Width= "100" Height = "25">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="C:\Users\Lenovo\source\repos\DibujoFormulario/buscar.png"  
+                    Margin = "0,0,0,0" Width=  "10" Height = "10" />
+                <TextBlock   >Consultar</TextBlock>
+            </StackPanel>
+        </Button>
 
         <Label Content="Cantidad:" Margin = "-500,-150,0,0" Width= "100" Height = "25"/>
 
@@ -41,8 +52,29 @@
         <Label Content="Fecha Modificacion" Margin = "30,-0,0,0" Width= "130" Height = "25"/>
         <Label Content="10/09/2020" Margin = "0,50,0,0" Width= "100" Height = "25"/>
         
-        <Button x:Name ="NuevoButton" Margin = "-500,150,0,0" Width= "100" Height = "25" Content="Nuevo"/>
-        <Button x:Name ="GuardarButton" Margin = "-250,150,0,0" Width= "100" Height = "25" Content ="Guardar"/>
-        <Button x:Name ="EliminarButton" Margin = "-0,150,0,0" Width= "100" Height = "25" Content="Eliminar" />
+        <Button   x:Name ="GuardarButton" FlowDirection="LeftToRight" Margin = "-250,150,0,0" Width= "100" Height = "25">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="C:\Users\Lenovo\source\repos\DibujoFormulario/guardar.jpg"  
+                    Margin = "0,0,0,0" Width=  "10" Height = "10" />
+                <TextBlock   >Guardar</TextBlock>
+            </StackPanel>
+        </Button>
+
+        <Button   x:Name ="EliminarButton" FlowDirection="LeftToRight" Margin = "-0,150,0,0" Width= "100" Height = "25">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="C:\Users\Lenovo\source\repos\DibujoFormulario/eliminar.png"  
+                    Margin = "0,0,0,0" Width=  "10" Height = "10" />
+                <TextBlock   >Eliminar</TextBlock>
+            </StackPanel>
+        </Button>
+
+         <Button   x:Name ="NuevoButton" FlowDirection="LeftToRight" Margin = "-500,150,0,0" Width= "100" Height = "25">
+            <StackPanel Orientation="Horizontal">
+                <Image  Source="C:\Users\Lenovo\source\repos\DibujoFormulario/nuevo.png"  
+                    Margin = "0,0,0,0" Width=  "10" Height = "10" />
+                <TextBlock   >Nuevo</TextBlock>
+            </StackPanel>
+        </Button>
+
     </Grid> 
 </Window>
